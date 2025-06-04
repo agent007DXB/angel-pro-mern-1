@@ -15,7 +15,7 @@ function Login() {
     e.preventDefault();
     setLoading(true);
     try {
-      const formattedPhone = "91" + phone;
+      const formattedPhone = "968" + phone;
       const result = await axiosClient.post("/auth/login", {
         phone: formattedPhone,
         password,
@@ -45,7 +45,7 @@ function Login() {
                 alt="India Flag"
                 className="absolute left-3 w-6 h-4"
               />
-              <span className="absolute left-12 text-gray-700">+91</span>
+              <span className="absolute left-12 text-gray-700">+968</span>
               <input
                 className="w-full pl-20 pr-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                 placeholder="Phone No"
